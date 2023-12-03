@@ -1,0 +1,528 @@
+﻿/*overall-content*/
+body.custom{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin-left: 7%;
+    margin-right: 7%;
+    background-color:rgb(179, 212, 214);
+}
+
+h1, h3{
+    color:black;
+    text-decoration:underline;
+}
+
+p{
+    color: #d1802e;
+}
+
+input, button, textarea, p, h1, h3, a, td, ul, li, span{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+input{
+    border: none;
+    border-bottom: 2px solid grey;
+    line-height: 25px;
+}
+
+input:hover{
+    border: none;
+    border-bottom: 2px solid black;
+    line-height: 25px;
+}
+
+a{
+    text-decoration:none;
+}
+
+a:hover{
+    text-decoration:none;
+}
+
+
+button{
+    margin: 5px;
+    padding: 7px 10px 7px 10px;
+    display: block;
+    text-decoration: none;
+    font-size: 17px;
+    text-align:center;
+    border: 1px solid;
+    color: #342d75;
+    background-color: white;
+}
+
+button:hover{
+    padding: 7px 10px 7px 10px;
+    color: #4d82d1;
+    display: block;
+    text-decoration: none;
+    text-align:center;
+    font-size: 17px;
+    border: 1px solid;
+    box-shadow: 0 0 6px grey;
+    background-color:white;
+}
+
+button.button-disabled{
+    padding: 7px 10px 7px 10px;
+    display: block;
+    text-decoration: none;
+    font-size: 17px;
+    text-align:center;
+    border: 1px solid;
+    color: black;
+    background-color: grey;
+}
+
+input.button{
+    margin: 5px;
+    padding: 7px 10px 7px 10px;
+    display: block;
+    text-decoration: none;
+    font-size: 17px;
+    text-align:center;
+    border: 1px solid;
+    color: #342d75;
+    background-color: white;
+}
+
+input.button:hover{
+    padding: 7px 10px 7px 10px;
+    color: #4d82d1;
+    display: block;
+    text-decoration: none;
+    text-align:center;
+    font-size: 17px;
+    border: 1px solid;
+    box-shadow: 0 0 6px grey;
+    background-color:white;
+}
+
+textarea{
+    width:inherit;
+}
+
+
+/*header*/
+div.header-wrapper{
+    padding-top:5px;
+    background-color:#ffd6fc;
+    box-shadow: 0px 3px 2px lightgray;
+}
+
+div.header-logo{
+    float:left;
+    margin-left:0px;
+    margin-right:auto;
+}
+
+img.header-logo{
+    padding:2px;
+    width:110px;
+    height:60px;
+}
+
+div.header{
+    float:right;
+    margin-right:0px;
+    margin-left:auto;
+}
+
+ul.header {
+    display:table; 
+    list-style:none;
+    padding: 5px;
+}
+
+li.header {
+    display:inline-block; 
+}
+
+img.search{
+    width:30px;
+    height:30px;
+}
+
+input.search{
+    border: none;
+    border-bottom: 1px solid grey;
+    line-height: 25px;
+    width:100px;
+    background-color:#ffd6fc;
+}
+
+input.search:hover{
+    border: none;
+    border-bottom: 1px solid black;
+    line-height: 25px;
+    width:100px;
+    background-color:#ffd6fc;
+}
+
+img.header{
+    width:35px;
+    height:35px;
+}
+
+/*navbar*/
+div.navbar{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:auto;
+    width:100%;
+    height:100px;
+    margin-bottom:5px;
+}
+
+.active{
+    background-color:#a2c7ff;
+    border-bottom: 3px solid;
+    color: #342d75;
+}
+
+#nav a {
+    display: block;
+    text-decoration: none;
+    text-align:center;
+}
+
+#nav li {
+    display:block;
+    float:left;
+    width:22%;
+    margin:auto;
+}
+
+#nav li ul li{
+    float:none;
+    width:inherit;
+    background-color:white;
+}
+
+#nav li ul {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    height:70px;
+}
+
+#nav li:hover ul {
+    display: block;
+}
+
+#nav {
+    height: 30px;
+}
+
+#nav a {
+    text-align: center;
+    padding: 10px 15px 10px 15px;
+    color: #342d75;
+}
+
+#nav a:hover {
+    border-bottom: 3px solid;
+    box-shadow: 0 0 6px grey;
+    color:#5f9fff;
+}
+
+/*footer*/
+footer{
+    margin-top:auto;
+    background-color:#ffd6fc;
+    box-shadow: 0px -1px 3px 3px lightgrey;
+}
+
+img.footer-logo{
+    padding:8px;
+    width:120px;
+    height:70px;
+}
+
+div.footer-payment{
+    float:right;
+    margin-right:20px;
+    margin-left:auto;
+    padding:3px 5px 3px 5px;
+    background-color:aliceblue;
+    border:2px dashed #342d75;
+}
+
+img.footer-payment{
+    width:30px;
+    height:25px;
+    padding-left:5px;
+    padding-right:5px;
+}
+
+/*content-general*/
+div.content-wrapper{
+    width:90%;
+    margin:auto;
+    box-shadow: 0px 1px 3px 4px lightgrey;
+    padding:20px;
+}
+
+div.content-wrapper-wider{
+    width:100%;
+    margin:auto;
+    box-shadow: 0px 1px 3px 4px lightgrey;
+    padding:20px;
+}
+
+/*content-index-listing*/
+table.book-table{
+    text-align: center;
+}
+
+li.book-table{
+    text-align: center;
+    display: inline-block;
+}
+
+td.book-table{
+    width: 25%;
+}
+
+div.img-book-table{
+    width:95px;
+    height:170px;
+    box-shadow: 0px 1px 3px 3px lightgrey;
+}
+
+img.book-table{
+    width:95px;
+    height:170px;
+}
+
+ul.book-table{
+    list-style-type: none;
+}
+
+td.listing{
+    padding:20px;
+}
+
+/*content-book*/
+p.book-detail{
+    font-size:30px;
+    text-decoration: underline;
+}
+
+p.book-detail-author{
+    font-size: 22px;
+}
+
+div.add-cart{
+    margin-top:10px;
+}
+
+input.add-cart{
+    padding: 7px 10px 7px 10px;
+    display: block;
+    text-decoration: none;
+    font-size: 15px;
+    text-align:center;
+    color: black;
+    border: none;
+    background-color: #5f9fff;
+}
+
+input.add-cart:hover{
+    padding: 7px 10px 7px 10px;
+    display:block;
+    text-decoration: none;
+    font-size: 15px;
+    text-align:center;
+    color: aliceblue;
+    border: none;
+    background-color: #342d75;
+}
+
+td.img-book-detail{
+    padding:15px 15px 30px 10px;
+}
+
+div.img-book-detail{ /*book detail cover shadow*/
+    width:170px;
+    height:305px;
+    box-shadow: 0px 1px 3px 4px lightgrey;
+}
+
+img.book-detail{
+    width:170px;
+    height:305px;
+}
+
+hr.book-detail{
+    size:1px;
+    color:black;
+    background-color:black;
+    margin:auto;
+}
+
+hr.review{
+    size:1px;
+    color:black;
+    background-color:black;
+    width:77%;
+    margin:auto;
+}
+
+div.review-user-wrapper{
+    width:77%;
+    margin:auto;
+}
+
+div.write-review{
+    padding:15px;
+    border:thin solid black;
+    height:325px;
+}
+
+div.review-button{
+    float:right;
+    padding-right:125px;
+}
+
+
+/*content-login-regis*/
+div.login-regis{
+    margin:auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 1px 3px 4px lightgrey;
+    padding: 30px;
+
+}
+
+h1.login-regis{
+    margin-bottom:15px;
+}
+
+p.login-regis{
+    margin-bottom:-1px;
+}
+
+input.login-regis{
+    width:170px;
+}
+
+div.login-regis-button{
+    float:right;
+    margin:10px;
+}
+
+
+/*content-edit-payment*/
+div.edit-payment{
+    margin-top:10px;
+    float:right;
+}
+
+div.edit-address{
+    width:100%;
+    margin:auto;
+}
+
+/*content-shopping-cart*/
+div.cart{
+    float:left;
+}
+
+div.cart-price{
+    float:right;
+    padding-top:70px;
+    padding-right:25px;
+}
+
+tr.cart-payment{
+    margin-right:0px;
+
+}
+
+
+/*content-payment*/
+h1.payment{
+    margin-bottom:-2px;
+}
+
+p.warning{
+    color:red;
+}
+
+div.payment-content{
+    float:right;
+    margin-top:70px;
+    margin-right:0px;
+    margin-left:auto;
+}
+
+div.cart-button{
+    padding-right: 0px;
+    float: right;
+}
+
+table.payment{
+    width:400px;
+}
+
+table.payment-button{
+    margin-top:-30px;
+    float:right;
+    padding-right:0px;
+}
+
+td.payment{
+    width:50%;
+    padding:20px;
+}
+
+h2.payment-total{
+    text-align:right;
+}
+
+h2.payment-price{
+    text-align:right;
+}
+
+div.payment-button{
+    float:right;
+    margin:3px;
+    width: 150px;
+}
+
+input:disabled{
+    margin: 5px;
+    padding: 7px 10px 7px 10px;
+    display: block;
+    text-decoration: none;
+    font-size: 17px;
+    text-align:center;
+    border: 1px solid;
+    color: gray;
+    background-color: lightgrey;
+}
+
+/*content-post-payment*/
+div.post-payment{
+    float: right;
+    margin-right: -15px;
+}
+
+a.post-payment-link{
+    display:block;
+    padding: 10px 15px 10px 15px;
+}
+
+a.post-payment-link:hover{ 
+    display:block;
+    padding: 10px 15px 10px 15px;
+    border-bottom: 3px solid;
+    box-shadow: 0 0 6px grey;
+}
